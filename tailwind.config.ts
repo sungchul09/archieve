@@ -19,6 +19,7 @@ const config: Config = {
       minHeight: px0_200 as any,
       spacing: px0_200 as any,
       borderRadius: px0_200 as any,
+      gap: px0_200 as any,
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
