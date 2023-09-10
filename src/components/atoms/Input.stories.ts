@@ -15,7 +15,7 @@ const meta = {
       options: ['textOnly', 'iconLeft', 'iconRight', 'prefix'],
     },
     fieldIcon: {
-      control: 'inline-radio',
+      control: 'select',
       options: ['Camera', 'Circle', 'Search', 'Spinner'],
     },
     fieldPrefix: {
@@ -24,9 +24,6 @@ const meta = {
     size: {
       control: 'inline-radio',
       options: ['small', 'default'],
-    },
-    isActive: {
-      control: 'boolean',
     },
     isError: {
       control: 'boolean',
