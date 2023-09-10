@@ -24,10 +24,10 @@ const meta = {
       control: 'inline-radio',
       options: ['small', 'default', 'large'],
     },
-    isActive: {
+    loading: {
       control: 'boolean',
     },
-    loading: {
+    isDisabled: {
       control: 'boolean',
     },
     icon: {
@@ -52,8 +52,8 @@ const defaultArgs: Story = {
     type: 'fill',
     level: 'primary',
     size: 'default',
-    isActive: true,
     loading: false,
+    isDisabled: false,
     icon: 'none',
     iconType: 'Camera',
     children: 'Button',
@@ -83,11 +83,11 @@ export const Only: Story = {
     icon: 'only',
   },
 }
-export const Inactive: Story = {
+export const disabled: Story = {
   ...defaultArgs,
   args: {
     ...defaultArgs.args,
-    isActive: false,
+    isDisabled: true,
   },
 }
 export const Loading: Story = {

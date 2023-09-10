@@ -53,7 +53,7 @@ export function Button({ type, level, size, isDisabled, loading, icon, iconType,
       tertiary: `active:text-green-600`,
     },
   }
-  const INACITVE_STYLE = 'hover:cursor-default opacity-50'
+  const CAN_NOT_CLICK_STYLE = 'hover:cursor-default opacity-50'
   const ICON_SIZE_STYLES = {
     small: 16,
     default: 16,
@@ -68,7 +68,7 @@ export function Button({ type, level, size, isDisabled, loading, icon, iconType,
     BASE_STYLE,
     TYPE_STYLES[type][level],
     SIZE_STYLES[size],
-    applyActiveStyle ? MOUSE_CLICK_STYLES[type][level] : INACITVE_STYLE,
+    applyActiveStyle ? MOUSE_CLICK_STYLES[type][level] : CAN_NOT_CLICK_STYLE,
   ].join(' ')
 
   const renderIcon = (animation: IconsProps['animation'], name: IconsProps['iconType']) => (
